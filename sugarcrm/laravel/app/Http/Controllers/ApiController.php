@@ -314,7 +314,7 @@ class ApiController extends Controller
             //Add code here
             $customer->load_relationship('lt_case')
             $case=new lt_case();
-            $case->retrieve(6);
+            $case->retrieve($id);
             $customer-> lt_case->add($case)
         }
 
